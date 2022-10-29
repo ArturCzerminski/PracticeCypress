@@ -10,9 +10,9 @@ class PomPage {
         searchResultsCount: () => cy.get('[class="rf-serp-resultcount"]')
     }
 
-    // openMacCategory(){
-    //     this.pomElements.macLink().click()
-    // }
+    openMacCategory(){
+        this.pomElements.macLink().click()
+    }
 
     searchForProduct(searchQuery){
         this.pomElements.searchIcon().type(searchQuery)
